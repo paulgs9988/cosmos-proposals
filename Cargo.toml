@@ -1,0 +1,17 @@
+[package]
+name = "cosmos-voting"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+cosmwasm-schema = "1.1.0"
+cosmwasm-std = "1.1.0"
+cw-storage-plus = "1.0.1"
+schemars = "0.8.10"
+serde = { version = "1.0.145", default-features = false, features = ["derive"] }
+thiserror = "1.0.31"
+
+# Remove axelar for now, we'll add it later when we set up cross-chain
